@@ -1,0 +1,8 @@
+[user]
+	email = hylinlin.mitalum@gmail.com
+	name = Linlin Huang
+[push]
+    default = simple
+
+[core]
+    editor = vim
