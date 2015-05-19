@@ -1,10 +1,6 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/wefunder/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
-# Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
 ZSH_THEME="wedisagree"
 
 # Uncomment the following line to use case-sensitive completion.
@@ -50,11 +46,8 @@ ZSH_THEME="wedisagree"
 # User configuration
 plugins=(git)
 
-
-export PATH="/Users/wefunder/.rvm/gems/ruby-2.0.0-p598/bin:/Users/wefunder/.rvm/gems/ruby-2.0.0-p598@global/bin:/Users/wefunder/.rvm/rubies/ruby-2.0.0-p598/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/wefunder/.rvm/bin"
-# export MANPATH="/usr/local/man:$MANPATH"
-
 source $ZSH/oh-my-zsh.sh
+unsetopt correct_all
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
