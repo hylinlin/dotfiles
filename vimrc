@@ -60,7 +60,6 @@ set shiftwidth=2
 set expandtab
 set incsearch "file automatically jumps to match as I type
 nmap <C-n> :NERDTreeToggle<CR> 
-autocmd vimenter * NERDTree "auto open NerdTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif "close vim if only thing left is nerdtree
 set backspace=2 "makes backspace work like most other apps 
 :set term=builtin_ansi "this is to correct the left/right arrow key fuck ups that sometimes happen
