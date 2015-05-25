@@ -6,11 +6,10 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim call vundle#begin()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
-call vundle#begin('~/some/path/here')
 
-"Bundle 'altercation/vim-colors-solarized'
 
 Plugin 'gmarik/Vundle.vim'
 
@@ -31,6 +30,14 @@ Plugin 'bling/vim-airline'
 " plugin from https://github.com/bling/vim-airline
 
 Plugin 'kchmck/vim-coffee-script'
+
+Plugin 'altercation/vim-colors-solarized'
+
+Plugin 'hail2u/vim-css3-syntax' 
+" from: http://vimawesome.com/plugin/better-css-syntax-for-vim
+
+Plugin 'cakebaker/scss-syntax.vim'
+" from:https://github.com/cakebaker/scss-syntax.vim 
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -54,15 +61,31 @@ syntax on
 set nu "set line numbers on
 set background=dark
 colorscheme solarized 
-set smartindent "automatically intent after curly brackets
-set tabstop=2 "this sets the tab to be 4 spaces
+set autoindent
+"set smartindent "automatically intent after curly brackets
+set tabstop=2 "this sets the tab to be 2  spaces
 set shiftwidth=2
 set expandtab
+
+"this makes sure file-specific indentations work
+filetype plugin indent on
+
 set incsearch "file automatically jumps to match as I type
 nmap <C-n> :NERDTreeToggle<CR> 
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif "close vim if only thing left is nerdtree
 set backspace=2 "makes backspace work like most other apps 
 :set term=builtin_ansi "this is to correct the left/right arrow key fuck ups that sometimes happen
+
+"CSS indentation and highlight
+augroup VimCSS3Syntax
+  autocmd!
+
+  autocmd FileType css setlocal iskeyword+=-
+augroup END
+
+"turn on omnicomplete
+set omnifunc=csscomplete#CompleteCSS
+
 
 "##############################################################################                                                                         
 "" Easier split navigation                                                                                                                               
