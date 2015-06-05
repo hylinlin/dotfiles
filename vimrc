@@ -1,4 +1,4 @@
-"==============================
+"=============================
 "==Vundle settings start here==
 "==============================
 
@@ -31,7 +31,8 @@ Plugin 'bling/vim-airline'
 
 Plugin 'kchmck/vim-coffee-script'
 
-Plugin 'altercation/vim-colors-solarized'
+Plugin 'chriskempson/base16-vim'
+"from: https://github.com/chriskempson/base16-vim
 
 Plugin 'hail2u/vim-css3-syntax' 
 " from: http://vimawesome.com/plugin/better-css-syntax-for-vim
@@ -59,8 +60,9 @@ filetype plugin indent on    " required
 "=======================
 syntax on
 set nu "set line numbers on
+let base16colorspace=256  " Access colors present in 256 colorspace
 set background=dark
-colorscheme solarized 
+colorscheme base16-monokai
 set autoindent
 "set smartindent "automatically intent after curly brackets
 set tabstop=2 "this sets the tab to be 2  spaces
