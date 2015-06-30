@@ -34,6 +34,8 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'chriskempson/base16-vim'
 "from: https://github.com/chriskempson/base16-vim
 
+Plugin 'airblade/vim-gitgutter'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -53,7 +55,7 @@ filetype plugin indent on    " required
 "==settings start here==
 "=======================
 syntax on
-"set nu "set line numbers on
+set nu "set line numbers on
 let base16colorspace=256  " Access colors present in 256 colorspace
 set background=dark
 colorscheme base16-monokai
@@ -62,8 +64,6 @@ set autoindent
 set tabstop=2 "this sets the tab to be 2  spaces
 set shiftwidth=2
 set expandtab
-set relativenumber
-set number
 
 "this makes sure file-specific indentations work
 filetype plugin indent on
