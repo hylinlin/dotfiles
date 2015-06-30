@@ -33,6 +33,9 @@ Plugin 'chriskempson/base16-vim'
 Plugin 'airblade/vim-gitgutter'
 "from: https://github.com/airblade/vim-gitgutter
 
+Plugin 'Floobits/floobits-vim'
+"from: https://github.com/Floobits/floobits-vim
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
