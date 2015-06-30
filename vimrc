@@ -20,8 +20,6 @@ Plugin 'gmarik/Vundle.vim'
 " The sparkup vim script is in a subdirectory of this repo called vim.
 " Pass the path to set the runtimepath properly.Plugin 'tpope/vim-fugitive'
 
-Plugin 'tpope/vim-fugitive'
-" plugin from http://vim-scripts.org/vim/scripts.html
  
 Plugin 'scrooloose/nerdtree'
 " plugin from https://github.com/scrooloose/nerdtree
@@ -29,12 +27,11 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'bling/vim-airline'
 " plugin from https://github.com/bling/vim-airline
 
-Plugin 'kchmck/vim-coffee-script'
-
 Plugin 'chriskempson/base16-vim'
 "from: https://github.com/chriskempson/base16-vim
 
 Plugin 'airblade/vim-gitgutter'
+"from: https://github.com/airblade/vim-gitgutter
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
