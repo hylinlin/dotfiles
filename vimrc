@@ -1,4 +1,4 @@
-"=============================
+""=============================
 "==Vundle settings start here==
 "==============================
 
@@ -35,6 +35,11 @@ Plugin 'airblade/vim-gitgutter'
 
 Plugin 'Floobits/floobits-vim'
 "from: https://github.com/Floobits/floobits-vim
+
+Plugin 'JulesWang/css.vim' "only necessary if your Vim version < 7.4
+Plugin 'cakebaker/scss-syntax.vim'
+"from: https://github.com/cakebaker/scss-syntax.vim
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
