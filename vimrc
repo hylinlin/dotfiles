@@ -1,4 +1,5 @@
-""=============================
+"
+"=============================
 "==Vundle settings start here==
 "==============================
 
@@ -20,7 +21,7 @@ Plugin 'gmarik/Vundle.vim'
 " The sparkup vim script is in a subdirectory of this repo called vim.
 " Pass the path to set the runtimepath properly.Plugin 'tpope/vim-fugitive'
 
- 
+
 Plugin 'scrooloose/nerdtree'
 " plugin from https://github.com/scrooloose/nerdtree
 
@@ -32,9 +33,6 @@ Plugin 'chriskempson/base16-vim'
 
 Plugin 'airblade/vim-gitgutter'
 "from: https://github.com/airblade/vim-gitgutter
-
-Plugin 'Floobits/floobits-vim'
-"from: https://github.com/Floobits/floobits-vim
 
 Plugin 'JulesWang/css.vim' "only necessary if your Vim version < 7.4
 Plugin 'cakebaker/scss-syntax.vim'
@@ -69,9 +67,10 @@ set autoindent
 set tabstop=2 "this sets the tab to be 2  spaces
 set shiftwidth=2
 set expandtab
-
-"this makes sure file-specific indentations work
-filetype plugin indent on
+set omnifunc=csscomplete#CompleteCSS "turn on omnicomplete
+set tw=80 "set text width
+filetype plugin indent on "this makes sure file-specific indentations work
+set linespace=2 
 
 set incsearch "file automatically jumps to match as I type
 
@@ -86,10 +85,6 @@ augroup VimCSS3Syntax
 
   autocmd FileType css setlocal iskeyword+=-
 augroup END
-
-"turn on omnicomplete
-set omnifunc=csscomplete#CompleteCSS
-
 
 "##############################################################################                                                                         
 "" Easier split navigation                                                                                                                               
