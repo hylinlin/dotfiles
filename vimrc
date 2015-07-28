@@ -1,4 +1,4 @@
-"
+
 "=============================
 "==Vundle settings start here==
 "==============================
@@ -71,7 +71,7 @@ set omnifunc=csscomplete#CompleteCSS "turn on omnicomplete
 set tw=80 "set text width
 filetype plugin indent on "this makes sure file-specific indentations work
 set linespace=2 
-
+set nowrap
 set incsearch "file automatically jumps to match as I type
 
 nmap <C-n> :NERDTreeToggle<CR> 
