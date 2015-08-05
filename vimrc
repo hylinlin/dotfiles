@@ -74,6 +74,7 @@ set nowrap
 set incsearch "file automatically jumps to match as I type
 
 "sets colors for specific elements of terminal
+"from https://github.com/chrishunt/color-schemes/blob/master/README.md
 highlight clear SignColumn
 highlight VertSplit    ctermbg=236
 highlight ColorColumn  ctermbg=237
