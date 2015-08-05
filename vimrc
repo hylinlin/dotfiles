@@ -1,5 +1,4 @@
-
-"=============================
+"===========================
 "==Vundle settings start here==
 "==============================
 
@@ -73,6 +72,22 @@ filetype plugin indent on "this makes sure file-specific indentations work
 set linespace=2 
 set nowrap
 set incsearch "file automatically jumps to match as I type
+
+"sets colors for specific elements of terminal
+highlight clear SignColumn
+highlight VertSplit    ctermbg=236
+highlight ColorColumn  ctermbg=237
+highlight LineNr       ctermbg=236 ctermfg=240
+highlight CursorLineNr ctermbg=236 ctermfg=240
+highlight CursorLine   ctermbg=236
+highlight StatusLineNC ctermbg=238 ctermfg=0
+highlight StatusLine   ctermbg=240 ctermfg=12
+highlight IncSearch    ctermbg=3   ctermfg=1
+highlight Search       ctermbg=1   ctermfg=3
+highlight Visual       ctermbg=3   ctermfg=0
+highlight Pmenu        ctermbg=240 ctermfg=12
+highlight PmenuSel     ctermbg=3   ctermfg=1
+highlight SpellBad     ctermbg=0   ctermfg=1
 
 nmap <C-n> :NERDTreeToggle<CR> 
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif "close vim if only thing left is nerdtree
