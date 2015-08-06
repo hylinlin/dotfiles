@@ -74,4 +74,5 @@ unsetopt correct_all
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+export TERM=xterm #this is for clearing screen whenver exit from a file
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
