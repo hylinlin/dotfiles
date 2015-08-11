@@ -1,5 +1,10 @@
 let g:netrw_dirhistmax  =10
 let g:netrw_dirhist_cnt =3
 let g:netrw_dirhist_1='/Users/linlin/wefunder/app/views/mockups'
+<<<<<<< HEAD
 let g:netrw_dirhist_2='/Users/wefunder/wefunder/app/views/mockups'
 let g:netrw_dirhist_3='/Users/wefunder'
+=======
+let g:netrw_dirhist_2='/Users/linlin/wefunder/app/assets/stylesheets'
+let g:netrw_dirhist_3='/Users/linlin/wefunder/features/invest_flow'
+>>>>>>> ce5c9aa053b1671f8b2500956e2751f5476e44b5

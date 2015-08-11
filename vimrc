@@ -1,4 +1,4 @@
-"=============================
+"===========================
 "==Vundle settings start here==
 "==============================
 
@@ -20,7 +20,7 @@ Plugin 'gmarik/Vundle.vim'
 " The sparkup vim script is in a subdirectory of this repo called vim.
 " Pass the path to set the runtimepath properly.Plugin 'tpope/vim-fugitive'
 
- 
+
 Plugin 'scrooloose/nerdtree'
 " plugin from https://github.com/scrooloose/nerdtree
 
@@ -33,8 +33,10 @@ Plugin 'chriskempson/base16-vim'
 Plugin 'airblade/vim-gitgutter'
 "from: https://github.com/airblade/vim-gitgutter
 
-Plugin 'Floobits/floobits-vim'
-"from: https://github.com/Floobits/floobits-vim
+Plugin 'JulesWang/css.vim' "only necessary if your Vim version < 7.4
+Plugin 'cakebaker/scss-syntax.vim'
+"from: https://github.com/cakebaker/scss-syntax.vim
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -64,11 +66,29 @@ set autoindent
 set tabstop=2 "this sets the tab to be 2  spaces
 set shiftwidth=2
 set expandtab
-
-"this makes sure file-specific indentations work
-filetype plugin indent on
-
+set omnifunc=csscomplete#CompleteCSS "turn on omnicomplete
+set tw=80 "set text width
+filetype plugin indent on "this makes sure file-specific indentations work
+set linespace=2 
+set nowrap
 set incsearch "file automatically jumps to match as I type
+
+"sets colors for specific elements of terminal
+"from https://github.com/chrishunt/color-schemes/blob/master/README.md
+highlight clear SignColumn
+highlight VertSplit    ctermbg=236
+highlight ColorColumn  ctermbg=237
+highlight LineNr       ctermbg=236 ctermfg=240
+highlight CursorLineNr ctermbg=236 ctermfg=240
+highlight CursorLine   ctermbg=236
+highlight StatusLineNC ctermbg=238 ctermfg=0
+highlight StatusLine   ctermbg=240 ctermfg=12
+highlight IncSearch    ctermbg=3   ctermfg=1
+highlight Search       ctermbg=1   ctermfg=3
+highlight Visual       ctermbg=3   ctermfg=0
+highlight Pmenu        ctermbg=240 ctermfg=12
+highlight PmenuSel     ctermbg=3   ctermfg=1
+highlight SpellBad     ctermbg=0   ctermfg=1
 
 nmap <C-n> :NERDTreeToggle<CR> 
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif "close vim if only thing left is nerdtree
@@ -81,10 +101,6 @@ augroup VimCSS3Syntax
 
   autocmd FileType css setlocal iskeyword+=-
 augroup END
-
-"turn on omnicomplete
-set omnifunc=csscomplete#CompleteCSS
-
 
 "##############################################################################                                                                         
 "" Easier split navigation                                                                                                                               
