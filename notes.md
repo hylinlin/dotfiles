@@ -13,3 +13,7 @@ command: rake db:migrate
 
 ####script to update database
 run script: ./script/pull_prod_db.sh
+
+####using rails c to bootstrap
+type in: rails c
+
