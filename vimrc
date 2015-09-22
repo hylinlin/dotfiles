@@ -33,10 +33,9 @@ Plugin 'chriskempson/base16-vim'
 Plugin 'airblade/vim-gitgutter'
 "from: https://github.com/airblade/vim-gitgutter
 
-Plugin 'JulesWang/css.vim' "only necessary if your Vim version < 7.4
-Plugin 'cakebaker/scss-syntax.vim'
-"from: https://github.com/cakebaker/scss-syntax.vim
-
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+"from: https://github.com/plasticboy/vim-markdown
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
