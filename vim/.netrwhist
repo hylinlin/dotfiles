@@ -1,9 +1,3 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
-let g:netrw_dirhist_1='/Users/linlin/wefunder/app/views/mockups'
-let g:netrw_dirhist_2='/Users/linlin/wefunder/app/assets/stylesheets'
-let g:netrw_dirhist_3='/Users/linlin/wefunder/features/invest_flow'
-let g:netrw_dirhist_4='/Users/linlin/wefunder/db'
-let g:netrw_dirhist_5='/Users/linlin/Dropbox (Personal)/books/the-fixation-of-belief'
-let g:netrw_dirhist_6='/Users/linlin/project_List/better-wages'
-let g:netrw_dirhist_7='/Users/linlin/Dropbox (Personal)/books/the-fixation-of-belief/git-tj'
+let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_1='/Users/linlin/wefunder/app/assets/stylesheets/_v4'
