@@ -52,6 +52,9 @@ Plugin 'ternjs/tern_for_vim'
 Plugin 'othree/javascript-libraries-syntax.vim'
 "from: https://github.com/othree/javascript-libraries-syntax.vim 
 
+Plugin 'scrooloose/syntastic'
+"from: https://github.com/scrooloose/syntastic
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
