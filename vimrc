@@ -43,6 +43,15 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'jelera/vim-javascript-syntax'
 "from: https://github.com/jelera/vim-javascript-syntax
 
+Plugin 'vim-scripts/JavaScript-Indent'
+"from: https://github.com/vim-scripts/JavaScript-Indent
+
+Plugin 'ternjs/tern_for_vim'
+"from: https://github.com/ternjs/tern_for_vim 
+
+Plugin 'othree/javascript-libraries-syntax.vim'
+"from: https://github.com/othree/javascript-libraries-syntax.vim 
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
