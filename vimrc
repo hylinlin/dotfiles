@@ -40,6 +40,9 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'kchmck/vim-coffee-script'
 "from: https://github.com/kchmck/vim-coffee-script
 
+Plugin 'jelera/vim-javascript-syntax'
+"from: https://github.com/jelera/vim-javascript-syntax
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
