@@ -55,6 +55,24 @@ Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'scrooloose/syntastic'
 "from: https://github.com/scrooloose/syntastic
 
+Plugin 'digitaltoad/vim-jade'
+"from: http://vimawesome.com/plugin/jade-vim
+
+Plugin 'elzr/vim-json'
+"from: http://vimawesome.com/plugin/json-vim
+
+Plugin 'Yggdroot/indentLine'
+"from: http://vimawesome.com/plugin/indentline
+
+Plugin 'kien/rainbow_parentheses.vim'
+"from: http://vimawesome.com/plugin/rainbow-parentheses-vim
+
+Plugin 'cakebaker/scss-syntax.vim'
+"from: http://vimawesome.com/plugin/scss-syntax-vim
+
+Plugin 'Valloric/YouCompleteMe'
+"from: http://vimawesome.com/plugin/youcompleteme
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -76,8 +94,8 @@ filetype plugin indent on    " required
 syntax on
 set nu "set line numbers on
 let base16colorspace=256  " Access colors present in 256 colorspace
-set background=dark
-colorscheme base16-monokai
+set background=light
+colorscheme base16-bright
 set autoindent
 "set smartindent "automatically intent after curly brackets
 set tabstop=2 "this sets the tab to be 2  spaces
