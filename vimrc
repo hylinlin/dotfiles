@@ -1,4 +1,4 @@
-"=========================
+""=========================
 "==Vundle settings start here==
 "==============================
 
@@ -34,44 +34,42 @@ Plugin 'airblade/vim-gitgutter'
 "from: https://github.com/airblade/vim-gitgutter
 
 Plugin 'godlygeek/tabular'
+
 Plugin 'plasticboy/vim-markdown'
 "from: https://github.com/plasticboy/vim-markdown
 
 Plugin 'kchmck/vim-coffee-script'
 "from: https://github.com/kchmck/vim-coffee-script
 
-Plugin 'jelera/vim-javascript-syntax'
+"Plugin 'jelera/vim-javascript-syntax'
 "from: https://github.com/jelera/vim-javascript-syntax
 
-Plugin 'vim-scripts/JavaScript-Indent'
+"Plugin 'vim-scripts/JavaScript-Indent'
 "from: https://github.com/vim-scripts/JavaScript-Indent
 
 Plugin 'ternjs/tern_for_vim'
 "from: https://github.com/ternjs/tern_for_vim 
 
-Plugin 'othree/javascript-libraries-syntax.vim'
+"Plugin 'othree/javascript-libraries-syntax.vim'
 "from: https://github.com/othree/javascript-libraries-syntax.vim 
 
-Plugin 'scrooloose/syntastic'
+"Plugin 'scrooloose/syntastic'
 "from: https://github.com/scrooloose/syntastic
+"this plugin makes the :w act all funky. there's a delay and if you type
+"anything at that time the chars will be recorded at random locations
 
-Plugin 'digitaltoad/vim-jade'
+
+"Plugin 'digitaltoad/vim-jade'
 "from: http://vimawesome.com/plugin/jade-vim
 
-Plugin 'elzr/vim-json'
+"Plugin 'elzr/vim-json'
 "from: http://vimawesome.com/plugin/json-vim
 
 Plugin 'Yggdroot/indentLine'
 "from: http://vimawesome.com/plugin/indentline
 
-Plugin 'kien/rainbow_parentheses.vim'
-"from: http://vimawesome.com/plugin/rainbow-parentheses-vim
-
 Plugin 'cakebaker/scss-syntax.vim'
 "from: http://vimawesome.com/plugin/scss-syntax-vim
-
-Plugin 'Valloric/YouCompleteMe'
-"from: http://vimawesome.com/plugin/youcompleteme
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -94,7 +92,7 @@ filetype plugin indent on    " required
 syntax on
 set nu "set line numbers on
 let base16colorspace=256  " Access colors present in 256 colorspace
-set background=light
+set background=dark
 colorscheme base16-bright
 set autoindent
 "set smartindent "automatically intent after curly brackets
