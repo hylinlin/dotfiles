@@ -76,3 +76,4 @@ unsetopt correct_all
 
 export TERM=xterm #this is for clearing screen whenver exit from a file
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+eval $(thefuck --alias)

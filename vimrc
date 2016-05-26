@@ -1,4 +1,4 @@
-""=========================
+"=========================
 "==Vundle settings start here==
 "==============================
 
@@ -92,8 +92,8 @@ filetype plugin indent on    " required
 syntax on
 set nu "set line numbers on
 let base16colorspace=256  " Access colors present in 256 colorspace
-set background=dark
-colorscheme base16-bright
+set background=light
+colorscheme base16-solarized
 set autoindent
 "set smartindent "automatically intent after curly brackets
 set tabstop=2 "this sets the tab to be 2  spaces
