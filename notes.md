@@ -20,7 +20,9 @@ type in: rails c
 ####Restart Pow
 context: https://github.com/rodreegez/powder
 > gem install powder
+
 > powder up
+
 `see if pow is running`
 > curl -H host:pow localhost/status.json
 
