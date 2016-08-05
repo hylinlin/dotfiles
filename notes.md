@@ -17,3 +17,12 @@ run script: ./script/pull_prod_db.sh
 ####using rails c to bootstrap
 type in: rails c
 
+####Restart Pow
+context: https://github.com/rodreegez/powder
+> gem install powder
+
+> powder up
+
+`see if pow is running`
+> curl -H host:pow localhost/status.json
+
