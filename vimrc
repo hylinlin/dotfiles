@@ -30,9 +30,6 @@ Plugin 'bling/vim-airline'
 Plugin 'chriskempson/base16-vim'
 "from: https://github.com/chriskempson/base16-vim
 
-Plugin 'airblade/vim-gitgutter'
-"from: https://github.com/airblade/vim-gitgutter
-
 Plugin 'godlygeek/tabular'
 
 Plugin 'plasticboy/vim-markdown'
